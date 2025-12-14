@@ -13,3 +13,14 @@ function write() {
 }
 // write()
 
+function read() {
+    fs.readFile("note.txt", "utf8", (err) => {
+        if (err) {
+            console.error("Error reading file")
+            return;
+        } else {
+            console.log("Content")
+        }
+    })
+}
+// read()
